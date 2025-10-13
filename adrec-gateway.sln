@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adrec.Gateway", "Src\Adrec.Gateway\Adrec.Gateway.csproj", "{D2BAAA4C-14E3-48A0-878A-38693C85E6AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adrec.Common", "Src\Adrec.Common\Adrec.Common.csproj", "{7EEF0999-BE44-41DD-8ABE-58EFA6BF970F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2BAAA4C-14E3-48A0-878A-38693C85E6AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2BAAA4C-14E3-48A0-878A-38693C85E6AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2BAAA4C-14E3-48A0-878A-38693C85E6AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2BAAA4C-14E3-48A0-878A-38693C85E6AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EEF0999-BE44-41DD-8ABE-58EFA6BF970F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EEF0999-BE44-41DD-8ABE-58EFA6BF970F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EEF0999-BE44-41DD-8ABE-58EFA6BF970F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EEF0999-BE44-41DD-8ABE-58EFA6BF970F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2BAAA4C-14E3-48A0-878A-38693C85E6AA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{7EEF0999-BE44-41DD-8ABE-58EFA6BF970F} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {077D413E-5408-4142-B6B2-BF52882446CA}
+	EndGlobalSection
+EndGlobal
