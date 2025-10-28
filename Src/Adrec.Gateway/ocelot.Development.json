@@ -3,10 +3,9 @@
     "BaseUrl": "http://localhost:5000"
   },
   "Routes": [
-
     //Configuration for Service Builder
     {
-      "DownstreamPathTemplate": "/api-info",
+      "DownstreamPathTemplate": "/api/api-info",
       "DownstreamScheme": "http",
       "SwaggerKey": "service-builder",
       "VirtualDirectory": "",
@@ -17,14 +16,10 @@
         }
       ],
       "UpstreamPathTemplate": "/api/api-info",
-      "UpstreamHttpMethod": [ "POST", "GET" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
+      "UpstreamHttpMethod": [ "POST", "GET" ]
     },
     {
-      "DownstreamPathTemplate": "/api-info/{id}",
+      "DownstreamPathTemplate": "/api/api-info/{id}",
       "DownstreamScheme": "http",
       "SwaggerKey": "service-builder",
       "VirtualDirectory": "",
@@ -35,11 +30,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/api-info/{id}",
-      "UpstreamHttpMethod": [ "GET", "DELETE" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/auth/login",
@@ -56,6 +47,24 @@
       "UpstreamHttpMethod": [ "POST" ]
     },
     {
+      "DownstreamPathTemplate": "/auth/logout",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "service-builder",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/auth/logout",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
       "DownstreamPathTemplate": "/auth/forgot_password_link",
       "DownstreamScheme": "http",
       "SwaggerKey": "service-builder",
@@ -69,6 +78,7 @@
       "UpstreamPathTemplate": "/api/auth/forgot_password_link",
       "UpstreamHttpMethod": [ "POST" ]
     },
+
     {
       "DownstreamPathTemplate": "/auth/forgot_password",
       "DownstreamScheme": "http",

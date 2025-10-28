@@ -21,4 +21,6 @@
 	  <ProjectReference Include="..\Adrec.Common\Adrec.Common.csproj" />
 	</ItemGroup>
 
+	<ProjectExtensions><VisualStudio><UserProperties ocelot_1staging_1json__JsonSchema="https://www.schemastore.org/ocelot.json" /></VisualStudio></ProjectExtensions>
+
 </Project>

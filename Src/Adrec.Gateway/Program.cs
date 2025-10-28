@@ -12,9 +12,10 @@ builder.Services.AddCors(option =>
 {
     option.AddDefaultPolicy(builder =>
     {
-        builder.AllowAnyOrigin()
+        builder.WithOrigins(["http://localhost:5173", "https://service-builder.mastermind-mindset.com"])
                .AllowAnyMethod()
-               .AllowAnyHeader();
+               .AllowAnyHeader()
+               .AllowCredentials();
     });
 });
 

@@ -17,11 +17,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/api-info",
-      "UpstreamHttpMethod": [ "POST", "GET" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
+      "UpstreamHttpMethod": [ "POST", "GET" ]
     },
     {
       "DownstreamPathTemplate": "/api-info/{id}",
@@ -35,11 +31,7 @@
         }
       ],
       "UpstreamPathTemplate": "/api/api-info/{id}",
-      "UpstreamHttpMethod": [ "GET", "DELETE" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer",
-        "AllowedScopes": []
-      }
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/auth/login",
@@ -953,6 +945,96 @@
         "AllowedScopes": []
       }
     },
+    {
+      "DownstreamPathTemplate": "/start-action/my-services",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/start-action/my-services",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/start-action/popular-services",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/start-action/popular-services",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/start-action/overview",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/start-action/overview",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/start-action/detail",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/start-action/detail",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/start-action/active-services",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/start-action/active-services",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
     //Configuration for Municipality Controller
     {
       "DownstreamPathTemplate": "/municipality",
@@ -1255,6 +1337,618 @@
         }
       ],
       "UpstreamPathTemplate": "/plot/tenancy-contract/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    //Clearance Certificate Configuration
+    {
+      "DownstreamPathTemplate": "/clearance-certificate/start",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/clearance-certificate/start",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/clearance-certificate/register-submit",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/clearance-certificate/register-submit",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/clearance-certificate/register-cancel",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/clearance-certificate/register-cancel",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/clearance-certificate/approval-reject",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/clearance-certificate/approval-reject",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/clearance-certificate/print",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/clearance-certificate/print",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/clearance-certificate/print-submit",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/clearance-certificate/print-submit",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/clearance-certificate/step-info",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/clearance-certificate/step-info",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    //Modify Tenanacy Contract Configuration
+    {
+      "DownstreamPathTemplate": "/tenancy-agreement-fix/start",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/tenancy-agreement-fix/start",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/tenancy-agreement-fix/register",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/tenancy-agreement-fix/register",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/tenancy-agreement-fix/approval-submit",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/tenancy-agreement-fix/approval-submit",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/tenancy-agreement-fix/step-info",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/tenancy-agreement-fix/step-info",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/tenancy-agreement-fix/tenancy-contract/{id}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/tenancy-agreement-fix/tenancy-contract/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/tenancy-agreement-fix/amount",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/tenancy-agreement-fix/amount",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    // Configuration for Community Controller
+    {
+      "DownstreamPathTemplate": "/community/{id}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/community/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    // Configuration for Road Controller
+    {
+      "DownstreamPathTemplate": "/roads/{id}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/roads/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    // Swagger Configuration
+    {
+      "DownstreamPathTemplate": "/api/swagger",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/swagger",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    // Login Controller
+    {
+      "DownstreamPathTemplate": "/dmt/login",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/dmt/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/dmt/current",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/dmt/current",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    //Mims profile Controller
+    {
+      "DownstreamPathTemplate": "/mims-profile/switch",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/mims-profile/switch",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/mims-profile",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/mims-profile",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/mims-profile/profile",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/mims-profile/profile",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/mims-profile/performance",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/mims-profile/performance",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/mims-profile/favorites",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/mims-profile/favorites",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    //Document Controller Configuration
+    {
+      "DownstreamPathTemplate": "/document/thumbnail",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/document/thumbnail",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    //Payment Controller Configuration
+    {
+      "DownstreamPathTemplate": "/payment/print-payment-slip",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/payment/print-payment-slip",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/payment/override-payment",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/payment/override-payment",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/payment/verify-payment",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/payment/verify-payment",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    //Tenancy Controller Configuration
+    {
+      "DownstreamPathTemplate": "/tenancy/calculate-rent-fees",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/tenancy/calculate-rent-fees",
+      "UpstreamHttpMethod": [ "POST" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/tenancy/late-rent-payment/{id}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/tenancy/late-rent-payment/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/tenancy/contracts-list/{plotId}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/tenancy/contracts-list/{plotId}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/tenancy/contracts-detail/{id}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/tenancy/contracts-detail/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/tenancy/contracts",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/tenancy/contracts",
+      "UpstreamHttpMethod": [ "GET" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    // My Activty Controller
+    {
+      "DownstreamPathTemplate": "/my-activity",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/my-activity",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    // News Controller
+    {
+      "DownstreamPathTemplate": "/news",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "runtime",
+      "VirtualDirectory": "",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "adrec-runtime.processclerk.com",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/news",
       "UpstreamHttpMethod": [ "GET" ],
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
