@@ -38,17 +38,17 @@ namespace Adrec.Common
                     ValidateAudience = false
                 };
 
-                a.Events = new JwtBearerEvents
-                {
-                    OnMessageReceived = context =>
-                    {
-                        if (context.Request.Cookies.ContainsKey("token"))
-                        {
-                            context.Token = context.Request.Cookies["token"];
-                        }
-                        return Task.CompletedTask;
-                    }
-                };
+                //a.Events = new JwtBearerEvents
+                //{
+                //    OnMessageReceived = context =>
+                //    {
+                //        if (context.Request.Cookies.ContainsKey("token"))
+                //        {
+                //            context.Token = context.Request.Cookies["token"];
+                //        }
+                //        return Task.CompletedTask;
+                //    }
+                //};
             });
 
             return services;
